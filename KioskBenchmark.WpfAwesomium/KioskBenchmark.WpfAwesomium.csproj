@@ -93,10 +93,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="awesomium_process">
+    <None Include="..\Libs\Awesomium 1.7.3.0\awesomium_process">
+      <Link>awesomium_process</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="inspector.pak">
+    <None Include="..\Libs\Awesomium 1.7.3.0\inspector.pak">
+      <Link>inspector.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
@@ -109,28 +111,36 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="avcodec-53.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\avcodec-53.dll">
+      <Link>avcodec-53.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="avformat-53.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\avformat-53.dll">
+      <Link>avformat-53.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="avutil-51.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\avutil-51.dll">
+      <Link>avutil-51.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="awesomium.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\awesomium.dll">
+      <Link>awesomium.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="icudt.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\icudt.dll">
+      <Link>icudt.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="libEGL.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\libEGL.dll">
+      <Link>libEGL.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="libGLESv2.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\libGLESv2.dll">
+      <Link>libGLESv2.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="xinput9_1_0.dll">
+    <None Include="..\Libs\Awesomium 1.7.3.0\xinput9_1_0.dll">
+      <Link>xinput9_1_0.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
