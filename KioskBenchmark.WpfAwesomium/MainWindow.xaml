@@ -1,0 +1,25 @@
+﻿<Window x:Class="KioskBenchmark.WpfAwesomium.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:core="clr-namespace:Awesomium.Core;assembly=Awesomium.Core"
+        xmlns:data="http://schemas.awesomium.com/winfx/data"
+        xmlns:awe="http://schemas.awesomium.com/winfx"
+        Title="MainWindow" Height="350" Width="525"
+        WindowStyle="None" WindowState="Maximized" ResizeMode="NoResize"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <awe:WebSessionProvider x:Key="mySession" DataPath=".\Cache">
+            <awe:WebSessionProvider.DataSources>
+                <data:ResourceDataSourceProvider x:Key="local" Type="Packed" />
+            </awe:WebSessionProvider.DataSources>
+            <core:WebPreferences 
+                SmoothScrolling="True" 
+                DefaultEncoding="iso-8859-7" />
+        </awe:WebSessionProvider>
+    </Window.Resources>
+    <Grid>
+        <awe:WebControl 
+            Name="webControl" 
+            WebSession="{Binding Source={StaticResource mySession}}" />
+    </Grid>
+</Window>
