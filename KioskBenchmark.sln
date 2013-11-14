@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskBenchmark.WpfAwesomium", "KioskBenchmark.WpfAwesomium\KioskBenchmark.WpfAwesomium.csproj", "{4150EF35-8814-4687-BF72-1ECB2B97323A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskBenchmark.FormsAwesomium", "KioskBenchmark.FormsAwesomium\KioskBenchmark.FormsAwesomium.csproj", "{3014EB73-B90B-4205-81EB-D1F1A09DC006}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4150EF35-8814-4687-BF72-1ECB2B97323A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4150EF35-8814-4687-BF72-1ECB2B97323A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4150EF35-8814-4687-BF72-1ECB2B97323A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
