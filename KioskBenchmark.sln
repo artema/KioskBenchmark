@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskBenchmark.WpfAwesomium
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskBenchmark.FormsAwesomium", "KioskBenchmark.FormsAwesomium\KioskBenchmark.FormsAwesomium.csproj", "{3014EB73-B90B-4205-81EB-D1F1A09DC006}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskBenchmark.FormsCefSharp", "KioskBenchmark.FormsCefSharp\KioskBenchmark.FormsCefSharp.csproj", "{EA48C01F-C2BD-47D1-95A4-942530566462}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
