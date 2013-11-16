@@ -29,7 +29,6 @@ namespace KioskBenchmark.FormsXiliumCefGlue
             var settings = new CefSettings();
             settings.MultiThreadedMessageLoop = true;
             settings.ReleaseDCheckEnabled = true;
-            settings.SingleProcess = true;
             settings.LogSeverity = CefLogSeverity.Warning;
             settings.LogFile = "cef.log";
             settings.ResourcesDirPath = System.IO.Path.GetDirectoryName(new Uri(System.Reflection.Assembly.GetEntryAssembly().CodeBase).LocalPath);
