@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CefGlue;
 using CefGlue.Windows.Forms;
 using System.Configuration;
+using System.IO;
 
 namespace KioskBenchmark.FormsCefGlue
 {
@@ -24,9 +25,19 @@ namespace KioskBenchmark.FormsCefGlue
 
         private void Form_Load(object sender, EventArgs e)
         {
+            var config = new CefSettings();
+            config.MultiThreadedMessageLoop = true;
+            config.CachePath = Path.GetDirectoryName(Application.ExecutablePath) + "/cache";
+            config.LogFile = Path.GetDirectoryName(Application.ExecutablePath) + "/cef.log";
+            config.LogSeverity = CefLogSeverity.Warning;
+
+            Cef.Initialize(config);
+
             var settings = new CefBrowserSettings();
             webView = new CefWebBrowser(settings, ConfigurationManager.ConnectionStrings["HomeUrl"].ConnectionString);
             webView.Dock = DockStyle.Fill;
+            webView.Parent = this;
+            webView.BringToFront();
             this.Controls.Add(webView);
         }
     }
