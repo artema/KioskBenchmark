@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F978069B-E0AE-4EDC-8FDD-BACEC719CE49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KioskBenchmark.FormsCefGlue</RootNamespace>
+    <AssemblyName>KioskBenchmark.FormsCefGlue</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CefGlue">
+      <HintPath>..\Libs\CefGlue 0.4.8\CefGlue.dll</HintPath>
+    </Reference>
+    <Reference Include="CefGlue.Windows.Forms">
+      <HintPath>..\Libs\CefGlue 0.4.8\CefGlue.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="..\Libs\CefGlue 0.4.8\chrome.pak">
+      <Link>chrome.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\am.pak">
+      <Link>locales\am.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ar.pak">
+      <Link>locales\ar.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\bg.pak">
+      <Link>locales\bg.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\bn.pak">
+      <Link>locales\bn.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ca.pak">
+      <Link>locales\ca.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\cs.pak">
+      <Link>locales\cs.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\da.pak">
+      <Link>locales\da.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\de.pak">
+      <Link>locales\de.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\el.pak">
+      <Link>locales\el.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\en-GB.pak">
+      <Link>locales\en-GB.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\en-US.pak">
+      <Link>locales\en-US.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\es-419.pak">
+      <Link>locales\es-419.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\es.pak">
+      <Link>locales\es.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\et.pak">
+      <Link>locales\et.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\fa.pak">
+      <Link>locales\fa.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\fi.pak">
+      <Link>locales\fi.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\fil.pak">
+      <Link>locales\fil.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\fr.pak">
+      <Link>locales\fr.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\gu.pak">
+      <Link>locales\gu.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\he.pak">
+      <Link>locales\he.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\hi.pak">
+      <Link>locales\hi.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\hr.pak">
+      <Link>locales\hr.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\hu.pak">
+      <Link>locales\hu.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\id.pak">
+      <Link>locales\id.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\it.pak">
+      <Link>locales\it.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ja.pak">
+      <Link>locales\ja.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\kn.pak">
+      <Link>locales\kn.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ko.pak">
+      <Link>locales\ko.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\lt.pak">
+      <Link>locales\lt.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\lv.pak">
+      <Link>locales\lv.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ml.pak">
+      <Link>locales\ml.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\mr.pak">
+      <Link>locales\mr.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\nb.pak">
+      <Link>locales\nb.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\nl.pak">
+      <Link>locales\nl.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\pl.pak">
+      <Link>locales\pl.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\pt-BR.pak">
+      <Link>locales\pt-BR.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\pt-PT.pak">
+      <Link>locales\pt-PT.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ro.pak">
+      <Link>locales\ro.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ru.pak">
+      <Link>locales\ru.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\sk.pak">
+      <Link>locales\sk.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\sl.pak">
+      <Link>locales\sl.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\sr.pak">
+      <Link>locales\sr.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\sv.pak">
+      <Link>locales\sv.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\sw.pak">
+      <Link>locales\sw.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\ta.pak">
+      <Link>locales\ta.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\te.pak">
+      <Link>locales\te.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\th.pak">
+      <Link>locales\th.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\tr.pak">
+      <Link>locales\tr.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\uk.pak">
+      <Link>locales\uk.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\vi.pak">
+      <Link>locales\vi.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\zh-CN.pak">
+      <Link>locales\zh-CN.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\locales\zh-TW.pak">
+      <Link>locales\zh-TW.pak</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Libs\CefGlue 0.4.8\avcodec-53.dll">
+      <Link>avcodec-53.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\avformat-53.dll">
+      <Link>avformat-53.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\avutil-51.dll">
+      <Link>avutil-51.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\d3dcompiler_43.dll">
+      <Link>d3dcompiler_43.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\d3dx9_43.dll">
+      <Link>d3dx9_43.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\icudt.dll">
+      <Link>icudt.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\libcef.dll">
+      <Link>libcef.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\libEGL.dll">
+      <Link>libEGL.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libs\CefGlue 0.4.8\libGLESv2.dll">
+      <Link>libGLESv2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

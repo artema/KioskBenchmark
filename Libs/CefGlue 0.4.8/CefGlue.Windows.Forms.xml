@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CefGlue.Windows.Forms</name>
+    </assembly>
+    <members>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.Close">
+            <summary>
+            Closes this browser window. This method will do not block the calling thread.
+            </summary>
+        </member>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.GoBack">
+            <summary>
+            Navigate backwards.
+            </summary>
+        </member>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.GoForward">
+            <summary>
+            Navigate backwards.
+            </summary>
+        </member>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.Reload">
+            <summary>
+            Reload the current page.
+            </summary>
+        </member>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.ReloadIgnoreCache">
+            <summary>
+            Reload the current page ignoring any cached data.
+            </summary>
+        </member>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.StopLoad">
+            <summary>
+            Stop loading the page.
+            </summary>
+        </member>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.ShowDevTools">
+            <summary>
+            Open developer tools in its own window.
+            </summary>
+        </member>
+        <member name="M:CefGlue.Windows.Forms.CefWebBrowser.CloseDevTools">
+            <summary>
+            Explicitly close the developer tools window if one exists for this browser instance.
+            </summary>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.AsyncWindowPosition">
+            <summary>
+            If the calling thread and the thread that owns the window are attached to different input queues, 
+            the system posts the request to the thread that owns the window. This prevents the calling thread from 
+            blocking its execution while other threads process the request.
+            </summary>
+            <remarks>SWP_ASYNCWINDOWPOS</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.DeferErase">
+            <summary>
+            Prevents generation of the WM_SYNCPAINT message.
+            </summary>
+            <remarks>SWP_DEFERERASE</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.DrawFrame">
+            <summary>
+            Draws a frame (defined in the window's class description) around the window.
+            </summary>
+            <remarks>SWP_DRAWFRAME</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.FrameChanged">
+            <summary>
+            Applies new frame styles set using the SetWindowLong function. Sends a WM_NCCALCSIZE message to 
+            the window, even if the window's size is not being changed. If this flag is not specified, WM_NCCALCSIZE 
+            is sent only when the window's size is being changed.
+            </summary>
+            <remarks>SWP_FRAMECHANGED</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.HideWindow">
+            <summary>
+            Hides the window.
+            </summary>
+            <remarks>SWP_HIDEWINDOW</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoActivate">
+            <summary>
+            Does not activate the window. If this flag is not set, the window is activated and moved to the 
+            top of either the topmost or non-topmost group (depending on the setting of the hWndInsertAfter parameter).
+            </summary>
+            <remarks>SWP_NOACTIVATE</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoCopyBits">
+            <summary>
+            Discards the entire contents of the client area. If this flag is not specified, the valid contents 
+            of the client area are saved and copied back into the client area after the window is sized or repositioned.
+            </summary>
+            <remarks>SWP_NOCOPYBITS</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoMove">
+            <summary>
+            Retains the current position (ignores X and Y parameters).
+            </summary>
+            <remarks>SWP_NOMOVE</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoOwnerZOrder">
+            <summary>
+            Does not change the owner window's position in the Z order.
+            </summary>
+            <remarks>SWP_NOOWNERZORDER</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoRedraw">
+            <summary>
+            Does not redraw changes. If this flag is set, no repainting of any kind occurs. This applies to 
+            the client area, the nonclient area (including the title bar and scroll bars), and any part of the parent 
+            window uncovered as a result of the window being moved. When this flag is set, the application must 
+            explicitly invalidate or redraw any parts of the window and parent window that need redrawing.
+            </summary>
+            <remarks>SWP_NOREDRAW</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoReposition">
+            <summary>
+            Same as the SWP_NOOWNERZORDER flag.
+            </summary>
+            <remarks>SWP_NOREPOSITION</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoSendChanging">
+            <summary>
+            Prevents the window from receiving the WM_WINDOWPOSCHANGING message.
+            </summary>
+            <remarks>SWP_NOSENDCHANGING</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoSize">
+            <summary>
+            Retains the current size (ignores the cx and cy parameters).
+            </summary>
+            <remarks>SWP_NOSIZE</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.NoZOrder">
+            <summary>
+            Retains the current Z order (ignores the hWndInsertAfter parameter).
+            </summary>
+            <remarks>SWP_NOZORDER</remarks>
+        </member>
+        <member name="F:CefGlue.Windows.Forms.SetWindowPosFlags.ShowWindow">
+            <summary>
+            Displays the window.
+            </summary>
+            <remarks>SWP_SHOWWINDOW</remarks>
+        </member>
+    </members>
+</doc>
