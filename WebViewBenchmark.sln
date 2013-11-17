@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.FormsAwesomium", "WebViewBenchmark.FormsAwesomium\WebViewBenchmark.FormsAwesomium.csproj", "{3014EB73-B90B-4205-81EB-D1F1A09DC006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.FormsCefGlue", "WebViewBenchmark.FormsCefGlue\WebViewBenchmark.FormsCefGlue.csproj", "{F978069B-E0AE-4EDC-8FDD-BACEC719CE49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.FormsCefSharp", "WebViewBenchmark.FormsCefSharp\WebViewBenchmark.FormsCefSharp.csproj", "{EA48C01F-C2BD-47D1-95A4-942530566462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.FormsXiliumCefGlue", "WebViewBenchmark.FormsXiliumCefGlue\WebViewBenchmark.FormsXiliumCefGlue.csproj", "{125E8A82-1B20-4903-BC5B-CEE48C20BAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.WpfAwesomium", "WebViewBenchmark.WpfAwesomium\WebViewBenchmark.WpfAwesomium.csproj", "{4150EF35-8814-4687-BF72-1ECB2B97323A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3014EB73-B90B-4205-81EB-D1F1A09DC006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F978069B-E0AE-4EDC-8FDD-BACEC719CE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F978069B-E0AE-4EDC-8FDD-BACEC719CE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F978069B-E0AE-4EDC-8FDD-BACEC719CE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F978069B-E0AE-4EDC-8FDD-BACEC719CE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA48C01F-C2BD-47D1-95A4-942530566462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125E8A82-1B20-4903-BC5B-CEE48C20BAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125E8A82-1B20-4903-BC5B-CEE48C20BAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125E8A82-1B20-4903-BC5B-CEE48C20BAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125E8A82-1B20-4903-BC5B-CEE48C20BAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4150EF35-8814-4687-BF72-1ECB2B97323A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4150EF35-8814-4687-BF72-1ECB2B97323A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4150EF35-8814-4687-BF72-1ECB2B97323A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4150EF35-8814-4687-BF72-1ECB2B97323A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

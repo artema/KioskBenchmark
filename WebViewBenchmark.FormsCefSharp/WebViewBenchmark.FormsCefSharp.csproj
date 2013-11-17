@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{125E8A82-1B20-4903-BC5B-CEE48C20BAFE}</ProjectGuid>
+    <ProjectGuid>{EA48C01F-C2BD-47D1-95A4-942530566462}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KioskBenchmark.FormsXiliumCefGlue</RootNamespace>
-    <AssemblyName>KioskBenchmark.FormsXiliumCefGlue</AssemblyName>
+    <RootNamespace>WebViewBenchmark.FormsCefSharp</RootNamespace>
+    <AssemblyName>WebViewBenchmark.FormsCefSharp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -21,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,10 +30,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CefSharp, Version=1.25.4.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\CefSharp 1.25.5\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=1.25.4.29918, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\CefSharp 1.25.5\CefSharp.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,12 +52,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Xilium.CefGlue">
-      <HintPath>..\Libs\Xilium CefGlue 3.1453.1236\Xilium.CefGlue.dll</HintPath>
-    </Reference>
-    <Reference Include="Xilium.CefGlue.WindowsForms">
-      <HintPath>..\Libs\Xilium CefGlue 3.1453.1236\Xilium.CefGlue.WindowsForms.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainForm.cs">
@@ -69,220 +70,221 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\cef.pak">
-      <Link>cef.pak</Link>
+    <None Include="..\Libs\CefSharp 1.25.5\devtools_resources.pak">
+      <Link>devtools_resources.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\am.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\am.pak">
       <Link>locales\am.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ar.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ar.pak">
       <Link>locales\ar.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\bg.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\bg.pak">
       <Link>locales\bg.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\bn.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\bn.pak">
       <Link>locales\bn.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ca.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ca.pak">
       <Link>locales\ca.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\cs.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\cs.pak">
       <Link>locales\cs.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\da.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\da.pak">
       <Link>locales\da.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\de.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\de.pak">
       <Link>locales\de.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\el.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\el.pak">
       <Link>locales\el.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\en-GB.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\en-GB.pak">
       <Link>locales\en-GB.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\en-US.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\en-US.pak">
       <Link>locales\en-US.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\es-419.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\es-419.pak">
       <Link>locales\es-419.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\es.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\es.pak">
       <Link>locales\es.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\et.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\et.pak">
       <Link>locales\et.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\fa.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\fa.pak">
       <Link>locales\fa.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\fi.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\fi.pak">
       <Link>locales\fi.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\fil.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\fil.pak">
       <Link>locales\fil.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\fr.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\fr.pak">
       <Link>locales\fr.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\gu.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\gu.pak">
       <Link>locales\gu.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\he.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\he.pak">
       <Link>locales\he.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\hi.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\hi.pak">
       <Link>locales\hi.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\hr.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\hr.pak">
       <Link>locales\hr.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\hu.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\hu.pak">
       <Link>locales\hu.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\id.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\id.pak">
       <Link>locales\id.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\it.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\it.pak">
       <Link>locales\it.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ja.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ja.pak">
       <Link>locales\ja.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\kn.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\kn.pak">
       <Link>locales\kn.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ko.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ko.pak">
       <Link>locales\ko.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\lt.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\lt.pak">
       <Link>locales\lt.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\lv.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\lv.pak">
       <Link>locales\lv.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ml.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ml.pak">
       <Link>locales\ml.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\mr.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\mr.pak">
       <Link>locales\mr.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ms.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ms.pak">
       <Link>locales\ms.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\nb.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\nb.pak">
       <Link>locales\nb.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\nl.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\nl.pak">
       <Link>locales\nl.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\pl.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\pl.pak">
       <Link>locales\pl.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\pt-BR.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\pt-BR.pak">
       <Link>locales\pt-BR.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\pt-PT.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\pt-PT.pak">
       <Link>locales\pt-PT.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ro.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ro.pak">
       <Link>locales\ro.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ru.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ru.pak">
       <Link>locales\ru.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\sk.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\sk.pak">
       <Link>locales\sk.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\sl.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\sl.pak">
       <Link>locales\sl.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\sr.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\sr.pak">
       <Link>locales\sr.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\sv.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\sv.pak">
       <Link>locales\sv.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\sw.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\sw.pak">
       <Link>locales\sw.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\ta.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\ta.pak">
       <Link>locales\ta.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\te.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\te.pak">
       <Link>locales\te.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\th.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\th.pak">
       <Link>locales\th.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\tr.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\tr.pak">
       <Link>locales\tr.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\uk.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\uk.pak">
       <Link>locales\uk.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\vi.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\vi.pak">
       <Link>locales\vi.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\zh-CN.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\zh-CN.pak">
       <Link>locales\zh-CN.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\locales\zh-TW.pak">
+    <None Include="..\Libs\CefSharp 1.25.5\locales\zh-TW.pak">
       <Link>locales\zh-TW.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -300,31 +302,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\d3dcompiler_43.dll">
-      <Link>d3dcompiler_43.dll</Link>
+    <None Include="..\Libs\CefSharp 1.25.5\avcodec-54.dll">
+      <Link>avcodec-54.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\d3dcompiler_46.dll">
-      <Link>d3dcompiler_46.dll</Link>
+    <None Include="..\Libs\CefSharp 1.25.5\avformat-54.dll">
+      <Link>avformat-54.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\ffmpegsumo.dll">
-      <Link>ffmpegsumo.dll</Link>
+    <None Include="..\Libs\CefSharp 1.25.5\avutil-51.dll">
+      <Link>avutil-51.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\icudt.dll">
+    <None Include="..\Libs\CefSharp 1.25.5\icudt.dll">
       <Link>icudt.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\libcef.dll">
+    <None Include="..\Libs\CefSharp 1.25.5\libcef.dll">
       <Link>libcef.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\libEGL.dll">
+    <None Include="..\Libs\CefSharp 1.25.5\libEGL.dll">
       <Link>libEGL.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\Libs\Xilium CefGlue 3.1453.1236\libGLESv2.dll">
+    <None Include="..\Libs\CefSharp 1.25.5\libGLESv2.dll">
       <Link>libGLESv2.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
