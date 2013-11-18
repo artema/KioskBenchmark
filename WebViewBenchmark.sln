@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.WpfAwesomi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.WpfDefault", "WebViewBenchmark.WpfDefault\WebViewBenchmark.WpfDefault.csproj", "{B5799D68-07B9-4FA9-93A4-3F3F79F05AF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.FormsDefault", "WebViewBenchmark.FormsDefault\WebViewBenchmark.FormsDefault.csproj", "{6A05D510-B532-4276-9594-8D4466658BD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{B5799D68-07B9-4FA9-93A4-3F3F79F05AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5799D68-07B9-4FA9-93A4-3F3F79F05AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5799D68-07B9-4FA9-93A4-3F3F79F05AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A05D510-B532-4276-9594-8D4466658BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A05D510-B532-4276-9594-8D4466658BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A05D510-B532-4276-9594-8D4466658BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A05D510-B532-4276-9594-8D4466658BD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
