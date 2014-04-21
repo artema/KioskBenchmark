@@ -34,10 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Geckofx-Core">
-      <HintPath>..\Libs\GeckoFx 22.0-0.6\Geckofx-Core.dll</HintPath>
+      <HintPath>..\Libs\GeckoFx 29.0-0.2\Geckofx-Core.dll</HintPath>
     </Reference>
     <Reference Include="Geckofx-Winforms">
-      <HintPath>..\Libs\GeckoFx 22.0-0.6\Geckofx-Winforms.dll</HintPath>
+      <HintPath>..\Libs\GeckoFx 29.0-0.2\Geckofx-Winforms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
