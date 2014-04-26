@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.FormsGecko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.WpfXiliumCefGlue", "WebViewBenchmark.WpfXiliumCefGlue\WebViewBenchmark.WpfXiliumCefGlue.csproj", "{92154167-47A2-45F4-8BB3-46747591A70D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewBenchmark.WpfCefSharp3", "WebViewBenchmark.WpfCefSharp3\WebViewBenchmark.WpfCefSharp3.csproj", "{FC67A9EA-FDA3-4164-BE2C-1F9F2AD9785E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{92154167-47A2-45F4-8BB3-46747591A70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92154167-47A2-45F4-8BB3-46747591A70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92154167-47A2-45F4-8BB3-46747591A70D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC67A9EA-FDA3-4164-BE2C-1F9F2AD9785E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC67A9EA-FDA3-4164-BE2C-1F9F2AD9785E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC67A9EA-FDA3-4164-BE2C-1F9F2AD9785E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC67A9EA-FDA3-4164-BE2C-1F9F2AD9785E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
