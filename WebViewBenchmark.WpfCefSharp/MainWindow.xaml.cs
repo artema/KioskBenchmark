@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -23,9 +24,27 @@ namespace WebViewBenchmark.WpfCefSharp
     {
         public MainWindow()
         {
+            var cefSettings = new Settings();
+            cefSettings.LogFile = @"./cef_log.txt";
+            cefSettings.LogSeverity = LogSeverity.Info;
+
+            do
+            {
+                CEF.Initialize(cefSettings);
+            }
+            while (!CEF.IsInitialized);
+
+
             InitializeComponent();
 
             webView.Address = ConfigurationManager.ConnectionStrings["HomeUrl"].ConnectionString;
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            CEF.Shutdown();
+
+            base.OnClosed(e);
         }
     }
 }
